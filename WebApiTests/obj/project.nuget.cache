@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VJuzHEt2ywezCAECvMRVe0gfqjYy0dtcVj+x30YfW0NgIA2LARr2uDRiB0wyhb1/LpIqKDKCnhE0Gygm9uP5cA==",
+  "dgSpecHash": "YCzbETkPAJ81KuzyvQp5pvBMYMxsNKJwWRWP+v/8bHls4cB09PRncVdAJNhTDMBG0irMnjSvm6G1Ttd/+9kcMw==",
   "success": true,
-  "projectFilePath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApiTests/WebApiTests.csproj",
+  "projectFilePath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApiTests/WebApiTests.csproj",
   "expectedPackageFiles": [
     "/Users/danielsaes/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/danielsaes/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

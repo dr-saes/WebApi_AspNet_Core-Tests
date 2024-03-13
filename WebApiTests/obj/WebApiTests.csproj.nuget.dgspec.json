@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApiTests/WebApiTests.csproj": {}
+    "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApiTests/WebApiTests.csproj": {}
   },
   "projects": {
-    "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApiTests/WebApiTests.csproj": {
+    "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApiTests/WebApiTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApiTests/WebApiTests.csproj",
+        "projectUniqueName": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApiTests/WebApiTests.csproj",
         "projectName": "WebApiTests",
-        "projectPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApiTests/WebApiTests.csproj",
+        "projectPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApiTests/WebApiTests.csproj",
         "packagesPath": "/Users/danielsaes/.nuget/packages/",
-        "outputPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApiTests/obj/",
+        "outputPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApiTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/danielsaes/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj": {
-                "projectPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj"
+              "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj": {
+                "projectPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj"
               }
             }
           }
@@ -110,14 +110,14 @@
         }
       }
     },
-    "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj": {
+    "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj",
+        "projectUniqueName": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj",
         "projectName": "WebApi_AspNet_Core",
-        "projectPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj",
+        "projectPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApi_AspNet_Core/WebApi_AspNet_Core.csproj",
         "packagesPath": "/Users/danielsaes/.nuget/packages/",
-        "outputPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core/obj/",
+        "outputPath": "/Users/danielsaes/Documents/Projects/vs-codeProjects/WebApi_AspNet_Core-WithTests/WebApi_AspNet_Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/danielsaes/.nuget/NuGet/NuGet.Config"

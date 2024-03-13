@@ -9,32 +9,30 @@ using Xunit;
 
 namespace WebApi_AspNet_Core.Tests
 {
+    [Collection(nameof(TestCollection))]
     public class ProductsControllerTests
     {
+        private readonly TestsFixtures _testFixtures;
+
+        public ProductsControllerTests(TestsFixtures testFixtures)
+        {
+            _testFixtures = testFixtures;
+        }
 
         //GetProducts() - _context not null
         [Fact(DisplayName = "Retornar todos Produtos")]
-        [Trait("Verb", "Get()")]
         public async Task GetProducts_ProductsNotNull_ReturnProducts()
         {
             // Arrange
-            var options = new DbContextOptionsBuilder<ApiDbContext>()
-                .UseInMemoryDatabase(databaseName: "TestDatabase")
-                .Options;
+            var productsController = _testFixtures.StartPopulatedDatabase();
 
-            using (var _context = new ApiDbContext(options))
-            {
-                InMemoryDatabaseInitializer.Initialize(_context);
-                var mockConfiguration = new Mock<IConfiguration>();
-                var productsController = new ProductsController(_context, mockConfiguration.Object);
+            // Act
+            var result = await productsController.GetProducts();
 
-                // Act
-                var result = await productsController.GetProducts();
+            // Assert
+            Assert.IsType<ActionResult<IEnumerable<Product>>>(result);
+            Assert.NotNull(result.Value);
 
-                // Assert
-                Assert.IsType<ActionResult<IEnumerable<Product>>>(result);
-                Assert.NotNull(result.Value);
-            }
         }
 
         //GetProducts() - _context null
@@ -71,7 +69,7 @@ namespace WebApi_AspNet_Core.Tests
 
             using (var _context = new ApiDbContext(options))
             {
-                InMemoryDatabaseInitializer.Initialize(_context);
+                InMemoryDatabaseInitializer.InitializeDB(_context);
                 var mockConfiguration = new Mock<IConfiguration>();
                 var productsController = new ProductsController(_context, mockConfiguration.Object);
                 var id = 1;
@@ -96,7 +94,7 @@ namespace WebApi_AspNet_Core.Tests
 
             using (var _context = new ApiDbContext(options))
             {
-                InMemoryDatabaseInitializer.InitializeNull(_context);
+                InMemoryDatabaseInitializer.InitializeNullDB(_context);
                 var mockConfiguration = new Mock<IConfiguration>();
                 var productsController = new ProductsController(_context, mockConfiguration.Object);
                 var id = 1;
@@ -120,7 +118,7 @@ namespace WebApi_AspNet_Core.Tests
 
             using (var _context = new ApiDbContext(options))
             {
-                InMemoryDatabaseInitializer.Initialize(_context);
+                InMemoryDatabaseInitializer.InitializeDB(_context);
                 var mockConfiguration = new Mock<IConfiguration>();
                 var productsController = new ProductsController(_context, mockConfiguration.Object);
                 var id = 111111;
@@ -145,7 +143,7 @@ namespace WebApi_AspNet_Core.Tests
 
             using (var _context = new ApiDbContext(options))
             {
-                InMemoryDatabaseInitializer.Initialize(_context);
+                InMemoryDatabaseInitializer.InitializeDB(_context);
                 var mockConfiguration = new Mock<IConfiguration>();
                 var productsController = new ProductsController(_context, mockConfiguration.Object);
                 var product = new Product
@@ -209,7 +207,7 @@ namespace WebApi_AspNet_Core.Tests
 
             using (var _context = new ApiDbContext(options))
             {
-                InMemoryDatabaseInitializer.Initialize(_context);
+                InMemoryDatabaseInitializer.InitializeDB(_context);
                 var mockConfiguration = new Mock<IConfiguration>();
                 var productsController = new ProductsController(_context, mockConfiguration.Object);
 
@@ -237,7 +235,7 @@ namespace WebApi_AspNet_Core.Tests
 
             using (var _context = new ApiDbContext(options))
             {
-                InMemoryDatabaseInitializer.Initialize(_context);
+                InMemoryDatabaseInitializer.InitializeDB(_context);
                 var mockConfiguration = new Mock<IConfiguration>();
                 var productsController = new ProductsController(_context, mockConfiguration.Object);
 
@@ -263,7 +261,7 @@ namespace WebApi_AspNet_Core.Tests
 
             using (var _context = new ApiDbContext(options))
             {
-                InMemoryDatabaseInitializer.Initialize(_context);
+                InMemoryDatabaseInitializer.InitializeDB(_context);
                 var mockConfiguration = new Mock<IConfiguration>();
                 var productsController = new ProductsController(_context, mockConfiguration.Object);
 
